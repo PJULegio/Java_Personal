@@ -8,7 +8,7 @@ public class Labs6 {
 
         long val = 176546L, result = 0;
         boolean isBiggest = false;
-                for(long i = val/2; i > 0 && isBiggest == false; i--){
+            for(long i = val/2; i > 0 && isBiggest == false; i--){
             if(isPrime(i)){
                 result = i;
                 isBiggest = true;
