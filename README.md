@@ -6,7 +6,7 @@ Welcome to our repository. We are students of PJATK and this is all the knowledg
 ##### You can find here: 
  - Simple tasks that we solve during labs.
  - Our homework.
- - Tasks that we solve in addition (codewars & leetcode). 
+ - Additional tasks we solved (codewars & leetcode). 
  - Additional projects.
  - And anything else that interests us.
  
