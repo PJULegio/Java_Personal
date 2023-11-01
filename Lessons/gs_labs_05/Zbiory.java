@@ -111,15 +111,5 @@ public class Zbiory
 				System.out.println("NIE moze istniec!");
 			}
 		} */
-
-		// ZADANIE VII
-		{
-			double x, y;
-			double a = 1; b = 2; c = 8; d = 2; e = -1; f = 1;
-
-			y = 
-			x = c - 
-		}
-
 	}
 }
