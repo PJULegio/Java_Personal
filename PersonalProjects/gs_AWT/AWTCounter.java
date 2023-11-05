@@ -24,18 +24,17 @@ public class AWTCounter extends Frame
         BtnCountListener listener = new BtnCountListener();
         btnCount.addActionListener(listener);
 
+        addWindowListener(new MyWindowListener());
+
         setTitle("AWT Counter");
         setSize(300, 100);
-
         // DEBUG - START
         /* System.out.println(this);
         System.out.println(lblCount);
         System.out.println(tfCount);
         System.out.println(btnCount); */
         // DEBUG END
-
         setVisible(true);
-
         // DEBUG - START
         /* System.out.println(this);
         System.out.println(lblCount);
@@ -57,5 +56,22 @@ public class AWTCounter extends Frame
             ++count;
             tfCount.setText(count + "");
         }
+    }
+
+    private class MyWindowListener implements WindowListener
+    {
+        @Override
+        public void windowClosing(WindowEvent evt)
+        {
+            System.exit(0);
+        }
+
+        @Override public void windowOpened(WindowEvent evt) { }
+        @Override public void windowClosed(WindowEvent evt) { }
+        // Debugging
+        @Override public void windowIconified(WindowEvent evt) { System.out.println("Window Iconified"); }
+        @Override public void windowDeiconified(WindowEvent evt) { System.out.println("Widnow Deiconified"); }
+        @Override public void windowActivated(WindowEvent evt) { System.out.println("Window Activated"); }
+        @Override public void windowDeactivated(WindowEvent evt) { System.out.println("Window Deactivated"); }
     }
 }
