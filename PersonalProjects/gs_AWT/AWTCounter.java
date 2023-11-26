@@ -21,26 +21,14 @@ public class AWTCounter extends Frame
 
         btnCount = new Button("Count");
         add(btnCount);
-        BtnCountListener listener = new BtnCountListener();
-        btnCount.addActionListener(listener);
+
+        btnCount.addActionListener(new BtnCountListener());
 
         addWindowListener(new MyWindowListener());
 
         setTitle("AWT Counter");
         setSize(300, 100);
-        // DEBUG - START
-        /* System.out.println(this);
-        System.out.println(lblCount);
-        System.out.println(tfCount);
-        System.out.println(btnCount); */
-        // DEBUG END
         setVisible(true);
-        // DEBUG - START
-        /* System.out.println(this);
-        System.out.println(lblCount);
-        System.out.println(tfCount);
-        System.out.println(btnCount); */
-        // DEBUG END
     }
 
     public static void main(String[] args)
