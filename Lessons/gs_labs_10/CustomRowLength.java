@@ -10,7 +10,7 @@ public class CustomRowLength
         for(int i = 0; i < tab.length; i++)
             tab[i] = new int[(int)(Math.random() * 10) + 1];
 
-        PrintTable.print2D(tab);
+        Print.show2D(tab);
 
 
         // CUSTOMIZABLE ROW LENGTHS
@@ -19,6 +19,6 @@ public class CustomRowLength
         for(int i = 0; i < tab.length; i++)
             tab[i] = new int[rowLength[i]];
 
-        PrintTable.print2D(tab);
+        Print.show2D(tab);
     }
 }

@@ -1,16 +1,20 @@
-public class PrintTable
-{
-    public static void print1D(int tab[])
-    {
-        for(int i = 0; i < tab.length; i++)
-        {
-            System.out.print(tab[i] + " ");
-        }
+// Zad 3
 
-        System.out.println("\n----------");
+public class Print
+{
+    public static void show(int i)
+    {
+        System.out.println(i + "\n-----------");
     }
 
-    public static void print2D(int tab[][])
+    public static void show1D(int tab[])
+    {
+        for(int i = 0; i < tab.length; i++)
+            System.out.print(tab[i] + " ");
+        System.out.println("\n-----------");
+    }
+
+    public static void show2D(int tab[][])
     {
         for(int i = 0; i < tab.length; i++)
         {

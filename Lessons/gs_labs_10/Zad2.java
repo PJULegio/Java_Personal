@@ -19,7 +19,7 @@ public class Zad2
             }
         }
 
-        PrintTable.print2D(tab);
+        Print.show2D(tab);
         
         for(int i = 0; i < tabY; i++)
         {
@@ -56,7 +56,7 @@ public class Zad2
             }
         }
 
-        PrintTable.print2D(tab);
-        PrintTable.print2D(newTab);
+        Print.show2D(tab);
+        Print.show2D(newTab);
     }
 }
