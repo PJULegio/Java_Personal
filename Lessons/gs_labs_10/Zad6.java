@@ -11,7 +11,6 @@ public class Zad6
         Print.show1D(tab2);
 
         java.util.Scanner scanner = new java.util.Scanner(System.in);
-
         int settings = scanner.nextInt();
 
         Print.show1D(myMethod(tab1, tab2, settings));
@@ -25,6 +24,7 @@ public class Zad6
         {
             ;
         }
+
         else if(settings < 0)
         {
             // Zmienna "size" równa rozmiarowi mniejszej tablicy z argumentów
@@ -40,11 +40,12 @@ public class Zad6
             for(int i = 0; i < size; i++)
                 result[i] = tab1[i] + tab2[i];
         }
+
         else if(settings > 0)
         {
             int smallerSize, biggerSize;
             int[] biggerTable;
-            
+
             if(tab1.length < tab2.length)
             {
                 smallerSize = tab1.length;
