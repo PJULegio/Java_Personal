@@ -34,7 +34,7 @@ public class zad6 {
         }
     }
 
-    public static int[] sort(int[] tablica, boolean asc)
+    public static void sort(int[] tablica, boolean asc)
     {
         for (int i = 0; i < tablica.length; i++) {
             for (int j = i; j < tablica.length; j++) {
@@ -52,8 +52,6 @@ public class zad6 {
                 }
             }
         }
-
-        return tablica;
     }
 
     public static void merge(int[] tablica1, int[] tablica2, int[] wynik)
