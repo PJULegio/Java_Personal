@@ -1,4 +1,5 @@
-public class zad4 {
+public class Zad4
+{
     public static void main(String[] args) {
         int[] arr = { 153, 333, 370, 515, 407, 80 };
 

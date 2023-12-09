@@ -1,6 +1,5 @@
-import java.util.Scanner;
-
-public class zad2 {
+public class Zad2
+{
     public static void main(String[] args) {
         char[] znaki = new char[5];
 
