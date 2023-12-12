@@ -1,5 +1,3 @@
-![PJATK LOGO](https://internetowe.pja.edu.pl/img/logo_header.png)
-
 # JAVA Basics PJATK
 Welcome to our repository. We are students of PJATK and this is all the knowledge we have accumulated during our work at the university. 
 
