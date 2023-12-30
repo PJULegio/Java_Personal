@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 public class Dron
 {
     private byte uniqueId;
@@ -57,5 +59,28 @@ public class Dron
     public String getName()
     {
         return name;
+    }
+
+    // Setters
+    public void setValue(String parameterName, double value)
+    {
+        switch (parameterName)
+        {
+            case "weight" -> { this.weight = value; }
+            case "enginePower" -> { this.enginePower = value; }
+            case "batteryLevel" -> { this.batteryLevel = value; }
+        }
+    }
+
+    public void setValue(String parameterName, byte value)
+    {
+        if(Objects.equals(parameterName, "uniqueId"))
+            this.uniqueId = value;
+    }
+
+    public void setValue(String parameterName, String value)
+    {
+        if(Objects.equals(parameterName, "name"))
+            this.name = value;
     }
 }
