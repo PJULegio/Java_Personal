@@ -15,6 +15,8 @@ public class Dron
         this.weight = weight;
         this.enginePower = enginePower;
         this.batteryLevel = batteryLevel;
+
+        DroneControlRoom.addNewDrone(this);
     }
 
     public boolean checkFlyParameters()

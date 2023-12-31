@@ -1,3 +1,7 @@
+// Not everything is printed to the console
+// Some values are accessible through debugger
+// TODO print missing values
+
 public class Main
 {
     public static void consoleOutputDivider(Dron dron)
@@ -13,6 +17,9 @@ public class Main
 
     public static void main(String[] args)
     {
+        DroneControlRoom wiezaKontrolna = new DroneControlRoom();
+        DroneControlRoom wiezaKontrolna2 = new DroneControlRoom();
+
         // Dron ID: 1
         Dron dronTestowy = new Dron((byte)1,
                 "DronTestowy",
@@ -146,5 +153,27 @@ public class Main
         christmasDrone3.deliverGift();
         christmasDrone3.deliverGift();
         phone.unpack();
+
+        // DRONE CONTROL ROOM OPERATIONS
+        wiezaKontrolna.countDronesThatCanFly();
+
+        System.out.println("\nDrones sorted by weight:");
+        wiezaKontrolna.sortAllDrones();
+
+        System.out.println("\nBefore charging");
+        for(Dron dron : DroneControlRoom.allDrones)
+            System.out.print(dron.getValue("batteryLevel") + " ");
+
+        wiezaKontrolna.chargeAllDrones();
+        System.out.println("\nAfter charging");
+        for(Dron dron : DroneControlRoom.allDrones)
+            System.out.print(dron.getValue("batteryLevel") + " ");
+
+        wiezaKontrolna2.chargeAllDrones();
+        System.out.println("\nAfter charging by wiezaKontrolna2");
+        for(Dron dron : DroneControlRoom.allDrones)
+            System.out.print(dron.getValue("batteryLevel") + " ");
+
+        wiezaKontrolna.findMostPowerful();
     }
 }
