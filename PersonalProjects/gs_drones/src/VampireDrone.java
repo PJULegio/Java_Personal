@@ -14,10 +14,8 @@ public class VampireDrone extends Dron
         {
             double consumedEnergy = prayDrone.getValue("batteryLevel") / 2;
             prayDrone.setValue("batteryLevel", consumedEnergy);
-            setValue(
-                    "batteryLevel",
-                    getValue("batteryLevel") + consumedEnergy
-            );
+            setValue("batteryLevel",
+                    getValue("batteryLevel") + consumedEnergy);
         }
         else
             System.out.println("Cannot be done - this drone is a bat");
