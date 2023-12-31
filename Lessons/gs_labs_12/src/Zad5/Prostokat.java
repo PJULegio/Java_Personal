@@ -1,8 +1,8 @@
 package Zad5;
 
 public class Prostokat {
-    private int dlugosc;
-    private int szerokosc;
+    private double dlugosc;
+    private double szerokosc;
 
     Prostokat(int a, int b)
     {
@@ -20,12 +20,12 @@ public class Prostokat {
         return this.dlugosc * this.szerokosc;
     }
 
-    public int getDlugosc()
+    public double getDlugosc()
     {
         return this.dlugosc;
     }
 
-    public int getSzerokosc()
+    public double getSzerokosc()
     {
         return this.szerokosc;
     }

@@ -1,7 +1,13 @@
 package Zad5;
 
 public class Prostopadloscian extends Prostokat {
-    private int wysokosc;
+    private double wysokosc;
+
+    Prostopadloscian(int a, int b, int c)
+    {
+        super(a, b);
+        this.wysokosc = c;
+    }
 
     Prostopadloscian(int c)
     {
