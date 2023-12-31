@@ -2,10 +2,8 @@ public class ChristmasDrone extends Dron
 {
     private Gift gift;
 
-    ChristmasDrone(
-            byte uniqueId, String name, double weight, double enginePower, double batteryLevel,
-            Gift gift
-    )
+    ChristmasDrone(byte uniqueId, String name, double weight, double enginePower, double batteryLevel,
+                   Gift gift)
     {
         super(uniqueId, name, weight, enginePower, batteryLevel);
         this.gift = gift;

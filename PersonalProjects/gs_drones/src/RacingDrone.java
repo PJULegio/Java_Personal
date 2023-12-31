@@ -5,10 +5,8 @@ public class RacingDrone extends Dron
     private String racingTeam;
     private int positionInRanking;
 
-    RacingDrone(
-            byte uniqueId, String name, double weight, double enginePower, double batteryLevel,
-            String racingTeam, int positionInRanking
-    )
+    RacingDrone(byte uniqueId, String name, double weight, double enginePower, double batteryLevel,
+                String racingTeam, int positionInRanking)
     {
         super(uniqueId, name, weight, enginePower, batteryLevel);
         this.racingTeam = racingTeam;
