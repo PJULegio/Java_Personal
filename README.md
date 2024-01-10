@@ -1,12 +1,5 @@
-# JAVA Basics PJATK
-Welcome to our repository. We are students of PJATK and this is all the knowledge we have accumulated during our work at the university. 
-
-##### You can find here: 
- - Simple tasks that we solve during labs.
- - Our homework.
- - Additional tasks we solved (codewars & leetcode). 
- - Additional projects.
- - And anything else that interests us.
+# JAVA Personal projects
+Welcome to our repository. We are students of PJATK and these are our personal projects. 
  
 ##### Contact Us
 
